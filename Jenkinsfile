@@ -17,7 +17,7 @@ pipeline {
 	}
         stage("Package") {
      		steps {
-		sh "cd caluculatr && mvn package"
+		sh "cd calculator && mvn package"
 }
 }
 }
