@@ -13,7 +13,8 @@ pipeline {
     	stage("Unit test") {          	 
         	steps {  	 
             	sh "cd calculator && mvn test"       	 
-       	}
+		}       	
+	}
         stage("Package") {
      		steps {
 		sh "cd caluculatr && mvn package"
