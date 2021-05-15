@@ -3,7 +3,7 @@ pipeline {
 	tools {
     	maven 'my_maven'
 	       }
-	}
+	stages{
     	stage('Build') {
         	steps {
         	sh "cd calculator && mvn compile"  	 
